@@ -1,0 +1,750 @@
+/* montserrat font */
+/* @import url(https://use.typekit.net/tzy4aya.css); */
+/* impetus font */
+@import url("https://use.typekit.net/per5uum.css");
+
+:root {
+  --white-bg-color: #fff;
+  --beige-bg-color: #f7f6f3;
+  --white-font-color: #f7f6f3;
+  --black-font-color: #424242;
+  --brown: #94774e;
+  --dark-grey: #707070;
+  --light-grey: #d3d3d3;
+
+  font-family: montserrat, sans-serif;
+  color: #424242;
+  font-size: 16px;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h5,
+li,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* TEXT STYLES */
+h1 {
+  font-family: impetus, sans-serif;
+  font-size: 4rem;
+  color: var(--white-font-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5 {
+  padding: 0.3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  margin: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-font-color);
+}
+/* TEXT STYLES END */
+
+/* BUTTONS */
+button {
+  /* button background */
+  /* min-width: 15rem; */
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5rem;
+  padding: 1.5rem 2rem;
+
+  /* font in the button */
+  font-family: montserrat, sans-serif;
+  color: var(--black-font-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.light_button {
+  background-color: var(--beige-bg-color);
+  min-width: 15rem;
+}
+
+.dark_button {
+  /* button background */
+  background-color: var(--brown);
+  color: var(--beige-bg-color);
+  min-width: 15rem;
+}
+/*BUTTONS END*/
+
+.textbox_background {
+  background-color: var(--beige-bg-color);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 2rem;
+}
+
+.column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.space-evenly {
+  align-items: space-evenly;
+}
+
+/* horizontal lines style */
+.brown_line {
+  border: 3px solid var(--brown);
+  background-color: var(--brown);
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* ICONS */
+svg {
+  cursor: pointer;
+  height: 3rem;
+}
+
+#logo svg {
+  height: 4.5rem;
+}
+/* ICONS END */
+
+/* NAVIGATION BAR START */
+.nav_bar {
+  padding: 1rem;
+  position: relative;
+  background-color: var(--beige-bg-color);
+  display: grid;
+  grid-template-columns: 70px 1fr 70px 70px;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav_bar nav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 25%;
+  max-width: 3000px;
+  transition: 0.3s ease-in-out;
+
+  background-color: var(--beige-bg-color);
+}
+
+.menu_hr {
+  background-color: var(--black-font-color);
+  border: 1.5px solid var(--black-font-color);
+  width: 70%;
+}
+
+.left_menu_container {
+  width: 100%;
+  margin-left: 18%;
+  display: flex;
+  justify-content: left;
+}
+
+#left_sidebar {
+  border-right: 3px solid var(--black-font-color);
+  transform: translateX(-100rem);
+  /* opacity: 0; */
+  left: 0;
+}
+
+#left_sidebar h2 {
+  text-align: left;
+}
+
+#left_sidebar h5 {
+  margin-left: 2rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.cafe_sidebar_toggle {
+  transition: 0.3s ease-in-out;
+}
+
+.cafe_hr_toggle {
+  width: 50%;
+  background-color: var(--black-font-color);
+  border: 0.2px solid var(--black-font-color);
+}
+
+#right_sidebar {
+  border-left: 3px solid var(--black-font-color);
+  transform: translateX(100rem);
+  right: 0;
+  display: none;
+}
+/* NAVIGATION BAR END */
+
+/* PAGE HEADER */
+main > header {
+  display: block;
+  position: relative;
+  background-color: var(--white-bg-color);
+}
+
+.bg_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_content {
+  height: 95vh;
+  backdrop-filter: blur(10px) brightness(50%);
+}
+
+.header_content_about {
+  backdrop-filter: blur(10px) brightness(50%);
+}
+/* PAGE HEADER END*/
+
+/* CUSTOMIZED PROPERTIES */
+
+/* MAIN PAGE INDEX*/
+.main_page_bg_img {
+  background-image: url("https://i.ibb.co/6n28Qv6/9.jpg");
+  position: fixed;
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.main_page_button {
+  height: 5rem;
+  min-width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_page_text {
+  color: var(--beige-bg-color);
+}
+
+/* CAFE MENU PAGE */
+.tile_menu {
+  height: 100vh;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.places_tile_menu {
+  height: 120vh;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.tile_container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.tile {
+  position: relative;
+  border-radius: 20px;
+  min-height: 20rem;
+  min-width: 20rem;
+  background-color: var(--black-font-color);
+}
+
+.tile:hover {
+  cursor: pointer;
+}
+
+.tile_content {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem;
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+.tile_content h1 {
+  font-size: 2rem;
+}
+
+.LYNfabrikken_tile_bg_img {
+  background-image: url("https://i.ibb.co/RvK8GxS/8.jpg");
+}
+
+.CafeMellemfolk_tile_bg_img {
+  background-image: url("https://i.ibb.co/wdk0pzF/8.jpg");
+}
+
+.Domen_tile_bg_img {
+  background-image: url("https://i.ibb.co/k87JfXq/1.jpg");
+}
+/* CAFE MENU PAGE END*/
+
+/* LYNFABRIKKEN PAGE */
+.LYNfabrikken_header_bg_img {
+  background-image: url("https://i.ibb.co/mcKnbWK/7.jpg");
+  width: 100%;
+  height: 95vh;
+}
+
+.CafeMellemfolk_header_bg_img {
+  background-image: url("https://i.ibb.co/BzrP970/5.jpg");
+  width: 100%;
+  height: 95vh;
+}
+
+.Domen_header_bg_img {
+  background-image: url("https://i.ibb.co/9b025vr/5.jpg");
+  width: 100%;
+  height: 95vh;
+}
+
+.BoardGames_tile_bg_img {
+  background-image: url("https://i.ibb.co/XCyJn4P/6.jpg");
+}
+
+.about_section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-items: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.about_place p {
+  max-width: 80%;
+  padding: 1rem 1rem;
+}
+
+.quote_box {
+  position: relative;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  min-height: 45vh;
+  max-width: 50%;
+}
+
+.quote_text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Calisto MT", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#left_quotemark {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+#right_quotemark {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.practical_info_section {
+  min-height: 160vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.practical_info_section hr {
+  border: 1px solid var(--light-grey);
+  width: 50%;
+}
+
+.info_row1_box {
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.info_row2_box {
+  justify-content: flex-start;
+  min-height: 30rem;
+  min-width: 25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* GALLERY */
+/* Slideshow container */
+.gallery_section {
+  height: 100vh;
+}
+
+.slideshow-container {
+  width: 40%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.gallery_background {
+  width: 100%;
+  background-color: var(--beige-bg-color);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* GALLERRY END */
+
+.groupsMenu_bg_img {
+  background-image: url("https://i.ibb.co/BzrP970/5.jpg");
+  width: 100%;
+  height: 95vh;
+}
+
+.about_group {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.whenwhere_section {
+  height: 100vh;
+}
+
+.column_left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.column_left h5 {
+  text-align: left;
+}
+
+.column_left p {
+  text-align: left;
+}
+
+.whenwhere_textbox {
+  min-height: 50vh;
+  min-width: 40vw;
+}
+
+.joinUs-container {
+  height: 100vh;
+}
+
+.joinUs_section {
+  height: 70vh;
+  justify-content: space-evenly;
+  background-color: var(--beige-bg-color);
+}
+
+.joinUs_section p {
+  width: 50%;
+}
+
+#arrow_top {
+  min-width: none !important;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: -50px;
+  right: -10px;
+  z-index: 99;
+  cursor: pointer;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+#arrow_top:hover {
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+#arrow_top svg {
+  height: 10rem;
+  width: 7rem;
+  margin-bottom: 0;
+}
+
+.about_website {
+  height: 70vh;
+  width: 70%;
+  margin: 10vh auto;
+}
+
+.about_website h2 {
+  margin-bottom: 2rem;
+}
+
+.about_website h5 {
+  width: 70%;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.9rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  #arrow_top {
+    display: none;
+  }
+
+  .icon {
+    max-width: 3rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main_page_button {
+    min-width: 20rem;
+  }
+
+  .about_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav_bar nav {
+    width: 100%;
+  }
+
+  #right_sidebar {
+    overflow-x: hidden;
+    display: none;
+  }
+
+  .gallery_section {
+    height: 80vh;
+  }
+
+  .slideshow-container {
+    width: 80%;
+  }
+
+  .tile_container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .places_tile_menu {
+    height: 120vh;
+  }
+}

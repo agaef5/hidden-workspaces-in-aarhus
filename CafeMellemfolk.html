@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Café Mellemfolk</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- montserrat font link from ADOBE -->
+        <link rel="stylesheet" href="https://use.typekit.net/per5uum.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+        <header class="nav_bar">
+            <!-- hamburger menu icon -->
+            <div class="icon" id="hamburger_menu" onclick="openMenuLeft()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="76.776" height="76.776" viewBox="0 0 76.776 76.776">
+                    <g id="Hamburger_Menu_Left_Side" data-name="Hamburger Menu | Left Side"
+                        transform="translate(-670 -380)">
+                        <g id="menu" transform="translate(670 380)">
+                            <path id="Vector" d="M0,0H57.582" transform="translate(9.597 22.393)" fill="none"
+                                stroke="#424242" stroke-linecap="round" stroke-width="4" />
+                            <path id="Vector-2" data-name="Vector" d="M0,0H57.582" transform="translate(9.597 38.388)"
+                                fill="none" stroke="#424242" stroke-linecap="round" stroke-width="4" opacity="0.34" />
+                            <path id="Vector-3" data-name="Vector" d="M0,0H57.582" transform="translate(9.597 54.383)"
+                                fill="none" stroke="#424242" stroke-linecap="round" stroke-width="4" />
+                            <g id="Vector-4" data-name="Vector" fill="none" opacity="0">
+                                <path d="M0,0H76.776V76.776H0Z" stroke="none" />
+                                <path
+                                    d="M 1 1 L 1 75.77572631835938 L 75.77572631835938 75.77572631835938 L 75.77572631835938 1 L 1 1 M 0 0 L 76.77572631835938 0 L 76.77572631835938 76.77572631835938 L 0 76.77572631835938 L 0 0 Z"
+                                    stroke="none" fill="#707070" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- menu on the left side that opens up after clicking on the hamburger menu icon -->
+            <nav id="left_sidebar">
+                <div class="icon" id="cross" onclick="closeMenuLeft()">
+                    <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="76.776" height="76.776"
+                        viewBox="0 0 76.776 76.776">
+                        <path id="Vector" d="M0,15.995H57.582" transform="translate(29.34 6.72) rotate(45)" fill="none"
+                            stroke="#424242" stroke-linecap="round" stroke-width="4" />
+                        <path id="Vector-2" data-name="Vector" d="M0,0H57.582"
+                            transform="translate(17.532 59.244) rotate(-45)" fill="none" stroke="#424242"
+                            stroke-linecap="round" stroke-width="4" />
+                        <path id="Vector-3" data-name="Vector" d="M0,0H76.776V76.776H0Z" fill="none" opacity="0" />
+                    </svg>
+                </div>
+
+                <div class="left_menu_container">
+                    <ul>
+                        <li>
+                            <h3><a href='About.html'>ABOUT</a></h3>
+                        </li>
+                        <hr class="menu_hr">
+                        <li>
+                            <h3><a href='placeMenu.html'>CAFES</a></h3>
+                        </li>
+                        <div class="cafe_sidebar_toggle">
+                            <hr class="cafe_hr_toggle">
+                            <li>
+                                <a href='LYNfabrikken.html'>
+                                    <h5>LYNfabrikken</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='CafeMellemfolk.html'>
+                                    <h5>Cafe Mellemfolk</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='Domen.html'>
+                                    <h5>Domen</h5>
+                                </a>
+                            </li>
+
+                            <hr class="cafe_hr_toggle">
+                            <li>
+                                <a href=''>
+                                    <h5>Choose for me!</h5>
+                                </a>
+                            </li>
+                        </div>
+                        <hr class="menu_hr">
+                        <li>
+                            <h3><a href='groupsMenu.html'>GROUPS</a></h3>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+
+
+            <!-- logo -->
+            <div class="icon" id="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="264.275" height="114.78" viewBox="0 0 264.275 114.78">
+                    <g id="Logo_Placeholder" data-name="Logo Placeholder" transform="translate(-823.632 -23.284)">
+                        <path id="A"
+                            d="M46.817-72.063c8.835-.387,15.247-7.125,15.247-16.343,0-9.45-6.8-16.3-16.054-16.3-9.228,0-16.043,6.853-16.043,16.3,0,9.188,6.38,15.913,15.154,16.339L-4.12,10.07H37.067l8.9-16.3,8.9,16.3H96.057Zm-4.525-16.3a3.724,3.724,0,0,1,3.8-3.873,3.727,3.727,0,0,1,3.813,3.873,3.739,3.739,0,0,1-3.813,3.9A3.736,3.736,0,0,1,42.292-88.361Z"
+                            transform="translate(991.85 127.994)" fill="#424242" />
+                        <path id="W"
+                            d="M0-70,15.52,11.427,45.76-16.314,76,11.427,91.52-70H56.42L53.83-51.194l-8.07-6.983-8.07,6.983L35.1-70Z"
+                            transform="translate(911.87 126.637)" fill="#424242" />
+                        <g id="H" transform="translate(823.632 56.637)">
+                            <path id="Path_2" data-name="Path 2" d="M11.29,222.11v.01h0Z"
+                                transform="translate(-11.29 -140.693)" fill="#424242" />
+                            <path id="Path_3" data-name="Path 3"
+                                d="M60.74,65.27V98.363H50.078V65.27H50L11.29,146.7H50.078V113.6H60.74V146.7H99.528V65.27Z"
+                                transform="translate(-11.29 -65.27)" fill="#424242" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- language switch icon -->
+            <a href="PageUnderConstruction.html">
+                <div class="icon" id="language_switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.308" height="58.399" viewBox="0 0 57.308 58.399">
+                        <g id="global" transform="translate(-172 -252)">
+                            <g id="global-2" data-name="global" transform="translate(172 252)">
+                                <path id="Vector"
+                                    d="M52.986,27.038c0,14.933-11.861,27.038-26.493,27.038S0,41.971,0,27.038,11.861,0,26.493,0,52.986,12.106,52.986,27.038Z"
+                                    transform="translate(2.161 2.161)" fill="none" stroke="#000" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="4" />
+                                <g id="Group_722" data-name="Group 722" transform="translate(3.242 3.242)"
+                                    opacity="0.4">
+                                    <path id="Vector-2" data-name="Vector"
+                                        d="M.5,0H1.58a174.71,174.71,0,0,0,0,46.892H.5" transform="translate(13.51 2.19)"
+                                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4" />
+                                    <path id="Vector-3" data-name="Vector" d="M0,0A174.71,174.71,0,0,1,0,46.892"
+                                        transform="translate(35.733 2.19)" fill="none" stroke="#000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                    <path id="Vector-4" data-name="Vector"
+                                        d="M0,1.081V0A163.876,163.876,0,0,0,45.408,0V1.081"
+                                        transform="translate(3.448 36.525)" fill="none" stroke="#000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                    <path id="Vector-5" data-name="Vector" d="M0,1.58a163.876,163.876,0,0,1,45.408,0"
+                                        transform="translate(3.448 13.811)" fill="none" stroke="#000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                </g>
+                                <path id="Vector-6" data-name="Vector" d="M0,0H57.308V58.4H0Z"
+                                    transform="translate(57.308 58.399) rotate(180)" fill="none" opacity="0" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- settings switch icon -->
+            <div onclick="openMenuRight()" class="icon" id="settings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64.93" height="64.93" viewBox="0 0 64.93 64.93">
+                    <g id="vuesax_twotone_setting-2" data-name="vuesax/twotone/setting-2"
+                        transform="translate(-300 -188)">
+                        <g id="setting-2" transform="translate(300 188)">
+                            <path id="Vector"
+                                d="M16.233,8.116A8.116,8.116,0,1,1,8.116,0,8.116,8.116,0,0,1,16.233,8.116Z"
+                                transform="translate(24.349 24.349)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="4" opacity="0.34" />
+                            <path id="Vector-2" data-name="Vector"
+                                d="M0,27.917V23.155a5.155,5.155,0,0,1,5.14-5.14c4.9,0,6.9-3.463,4.437-7.71A5.138,5.138,0,0,1,11.471,3.3L16.151.619A4.515,4.515,0,0,1,22.32,2.243l.3.514c2.435,4.248,6.439,4.248,8.9,0l.3-.514A4.515,4.515,0,0,1,37.984.619L42.664,3.3A5.138,5.138,0,0,1,44.558,10.3c-2.462,4.248-.46,7.71,4.437,7.71a5.155,5.155,0,0,1,5.14,5.14v4.762A5.155,5.155,0,0,1,49,33.057c-4.9,0-6.9,3.463-4.437,7.71a5.131,5.131,0,0,1-1.894,7.007l-4.68,2.678a4.515,4.515,0,0,1-6.168-1.623l-.3-.514c-2.435-4.248-6.439-4.248-8.9,0l-.3.514a4.515,4.515,0,0,1-6.168,1.623l-4.68-2.678a5.138,5.138,0,0,1-1.894-7.007c2.462-4.248.46-7.71-4.437-7.71A5.155,5.155,0,0,1,0,27.917Z"
+                                transform="translate(5.411 6.929)" fill="none" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="4" />
+                            <path id="Vector-3" data-name="Vector" d="M0,0H64.93V64.93H0Z" fill="none" opacity="0" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- menu on the right side that opens up after clicking on the settings menu icon -->
+            <nav id="right_sidebar">
+                <div onclick="closeMenuRight()" class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="89.929" height="89.929" viewBox="0 0 89.929 89.929">
+                        <g id="vuesax_twotone_arrow-right" data-name="vuesax/twotone/arrow-right"
+                            transform="translate(-6.216 234.892)">
+                            <g id="arrow-right" transform="translate(10.216 -230.892)">
+                                <path id="Vector" d="M0,54.073,22.257,31.816a6.779,6.779,0,0,0,0-9.558L0,0"
+                                    transform="translate(30.416 13.928)" fill="none" stroke="#424242"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                <g id="Vector-2" data-name="Vector" transform="translate(81.929 81.929) rotate(180)"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+                                    <path d="M0,0H81.929V81.929H0Z" stroke="none" />
+                                    <path
+                                        d="M 7.62939453125e-06 7.62939453125e-06 L 7.62939453125e-06 81.92868804931641 L 81.92868804931641 81.92868804931641 L 81.92868804931641 7.62939453125e-06 L 7.62939453125e-06 7.62939453125e-06 M 7.62939453125e-06 -3.999992370605469 L 81.92868804931641 -3.999992370605469 C 84.13783264160156 -3.999992370605469 85.92868804931641 -2.209136962890625 85.92868804931641 7.62939453125e-06 L 85.92868804931641 81.92868804931641 C 85.92868804931641 84.13783264160156 84.13783264160156 85.92868804931641 81.92868804931641 85.92868804931641 L 7.62939453125e-06 85.92868804931641 C -2.209136962890625 85.92868804931641 -3.999992370605469 84.13783264160156 -3.999992370605469 81.92868804931641 L -3.999992370605469 7.62939453125e-06 C -3.999992370605469 -2.209136962890625 -2.209136962890625 -3.999992370605469 7.62939453125e-06 -3.999992370605469 Z"
+                                        stroke="none" fill="#424242" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="column_center">
+                    <h3>dark/light <br> mode</h3>
+                    <a href="PageUnderConstruction.html">
+                        <div class="icon" id="sun">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52.917" height="52.917"
+                                viewBox="0 0 52.917 52.917">
+                                <g id="vuesax_twotone_sun" data-name="vuesax/twotone/sun"
+                                    transform="translate(-210.443 402)">
+                                    <g id="sun" transform="translate(210.443 -402)">
+                                        <path id="Vector"
+                                            d="M28.664,14.332A14.332,14.332,0,1,1,14.332,0,14.332,14.332,0,0,1,28.664,14.332Z"
+                                            transform="translate(12.127 12.127)" fill="#424242" stroke="#424242"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        <path id="Vector-2" data-name="Vector"
+                                            d="M37.505,6.593l.287-.287Zm-31.2,31.2.287-.287ZM22.049.176v0Zm0,43.921v0ZM.176,22.049h0Zm43.921,0h0ZM6.593,6.593l-.287-.287Zm31.2,31.2-.287-.287"
+                                            transform="translate(4.41 4.41)" fill="#424242" stroke="#424242"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        <path id="Vector-3" data-name="Vector" d="M0,0H52.917V52.917H0Z"
+                                            transform="translate(52.917 52.917) rotate(180)" fill="#424242"
+                                            opacity="0" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+
+
+                    <hr class="menu_hr">
+
+                    <h3>sound <br> on/off</h3>
+                    <a href="PageUnderConstruction.html">
+                        <div class="icon" id="soundOn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63.793" height="63.793"
+                                viewBox="0 0 63.793 63.793">
+                                <g id="vuesax_twotone_volume-high" data-name="vuesax/twotone/volume-high"
+                                    transform="translate(8.897 -3)">
+                                    <g id="volume-high" transform="translate(-8.897 3)">
+                                        <path id="Vector"
+                                            d="M0,15.527V26.16q0,7.974,7.974,7.974h3.8a5.572,5.572,0,0,1,2.818.8L22.354,39.8c6.7,4.2,12.2,1.143,12.2-6.751V8.643c0-7.921-5.5-10.951-12.2-6.751L14.593,6.756a5.572,5.572,0,0,1-2.818.8h-3.8Q0,7.553,0,15.527Z"
+                                            transform="translate(5.316 11.053)" fill="none" stroke="#424242"
+                                            stroke-width="4" />
+                                        <path id="Vector-2" data-name="Vector" d="M0,0A17.7,17.7,0,0,1,0,21.264"
+                                            transform="translate(47.845 21.264)" fill="none" stroke="#000"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            opacity="0.4" />
+                                        <path id="Vector-3" data-name="Vector" d="M0,0A28.787,28.787,0,0,1,0,34.555"
+                                            transform="translate(52.709 14.619)" fill="none" stroke="#000"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                            opacity="0.4" />
+                                        <path id="Vector-4" data-name="Vector" d="M0,0H63.793V63.793H0Z" fill="none"
+                                            opacity="0" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+        </header>
+
+        <main>
+            <button id="arrow_top" onclick="GoToTop()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="321.999" height="205.75" viewBox="0 0 321.999 205.75">
+                    <g id="vuesax_twotone_arrow-right" data-name="vuesax/twotone/arrow-right"
+                        transform="translate(-99.226 443.101) rotate(-90)">
+                        <g id="arrow-right" transform="translate(166 86)">
+                            <path id="Vector" d="M0,229.978l94.663-94.663a28.83,28.83,0,0,0,0-40.653L0,0"
+                                transform="translate(129.363 59.237)" fill="none" stroke="#424242"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="15" />
+                            <g id="Vector-2" data-name="Vector" transform="translate(262.101 320.225) rotate(180)"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+                                <path d="M0,0H175.75V292H0Z" stroke="none" />
+                                <path
+                                    d="M 0 0 L 0 291.9991455078125 L 175.7501068115234 291.9991455078125 L 175.7501068115234 0 L 0 0 M 0 -15 L 175.7501068115234 -15 C 184.0343627929688 -15 190.7501068115234 -8.284271240234375 190.7501068115234 0 L 190.7501068115234 291.9991455078125 C 190.7501068115234 300.2834167480469 184.0343627929688 306.9991455078125 175.7501068115234 306.9991455078125 L 0 306.9991455078125 C -8.284255981445312 306.9991455078125 -15 300.2834167480469 -15 291.9991455078125 L -15 0 C -15 -8.284271240234375 -8.284255981445312 -15 0 -15 Z"
+                                    stroke="none" fill="#424242" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+            </button>
+
+            <header class="CafeMellemfolk_header_bg_img bg_img">
+                <div class="column_center header_content">
+                    <h1>Café<br>Mellemfolk</h1>
+
+                    <div class="row_center">
+                        <a href="#id1">
+                            <button class="light_button">about</button>
+                        </a>
+
+                        <a href="#id2">
+                            <button class="light_button">info</button>
+                        </a>
+
+                        <a href="#id3">
+                            <button class="light_button">gallery</button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+
+            <div id="id1" class="about_section">
+                <div class="about_place column_center">
+                    <h2>about</h2>
+                    <p>
+                        Café Mellemfolk is more than an ordinary café – it’s a café with principles!
+                    </p>
+                    <p>
+                        We’re run by volunteers, we have high standards for every item on our menu, and we donate our
+                        proceeds to projects around the globe working for a more sustainable and just world. At Café
+                        Mellemfolk, you can enjoy a Fair Trade coffee beverage and good prices.
+                    </p>
+                </div>
+                <div class="column_center">
+                    <div class="quote_box textbox_background column_center">
+                        <div class="icon" id="left_quotemark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60.912" height="60.912"
+                                viewBox="0 0 60.912 60.912">
+                                <g id="vuesax_twotone_quote-down" data-name="vuesax/twotone/quote-down"
+                                    transform="translate(301 472)">
+                                    <g id="quote-down" transform="translate(-301 -472)">
+                                        <g id="Group" transform="translate(34.567 8.299)">
+                                            <path id="Vector"
+                                                d="M21.268,21.268H6.548A6.391,6.391,0,0,1,0,14.72V6.548A6.391,6.391,0,0,1,6.548,0H14.72a6.564,6.564,0,0,1,6.548,6.548Z"
+                                                fill="none" stroke="#424242" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="4" />
+                                            <path id="Vector-2" data-name="Vector"
+                                                d="M11.5,0C11.5,15.355,8.629,17.893,0,23.019"
+                                                transform="translate(9.771 21.268)" fill="none" stroke="#424242"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        </g>
+                                        <g id="Group_109" data-name="Group 109" transform="translate(5.051 8.299)"
+                                            opacity="0.4">
+                                            <path id="Vector-3" data-name="Vector"
+                                                d="M21.268,21.268H6.548A6.391,6.391,0,0,1,0,14.72V6.548A6.391,6.391,0,0,1,6.548,0h8.2a6.564,6.564,0,0,1,6.548,6.548v14.72"
+                                                fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="4" />
+                                            <path id="Vector-4" data-name="Vector"
+                                                d="M11.5,0C11.5,15.355,8.629,17.893,0,23.019"
+                                                transform="translate(9.77 21.268)" fill="none" stroke="#000"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        </g>
+                                        <g id="Vector-5" data-name="Vector"
+                                            transform="translate(60.912 60.912) rotate(180)" fill="none" opacity="0">
+                                            <path d="M0,0H60.912V60.912H0Z" stroke="none" />
+                                            <path
+                                                d="M 1 1 L 1 59.91161727905273 L 59.91161727905273 59.91161727905273 L 59.91161727905273 1 L 1 1 M 0 0 L 60.91161727905273 0 L 60.91161727905273 60.91161727905273 L 0 60.91161727905273 L 0 0 Z"
+                                                stroke="none" fill="#707070" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+
+                        <div class="quote_text">
+                            Café Mellemfolk is definitely the coziest café in Aarhus
+                        </div>
+
+                        <div class="icon" id="right_quotemark">
+                            <svg id="vuesax_twotone_quote-up" data-name="vuesax/twotone/quote-up"
+                                xmlns="http://www.w3.org/2000/svg" width="60.911" height="60.911"
+                                viewBox="0 0 60.911 60.911">
+                                <g id="quote-up" transform="translate(0 0)">
+                                    <g id="Group_99" data-name="Group 99" transform="translate(5.076 8.325)"
+                                        opacity="0.4">
+                                        <path id="Vector"
+                                            d="M0,0H14.72a6.391,6.391,0,0,1,6.548,6.548V14.72a6.391,6.391,0,0,1-6.548,6.548H6.548A6.564,6.564,0,0,1,0,14.72Z"
+                                            transform="translate(0 23.019)" fill="none" stroke="#000"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        <path id="Vector-2" data-name="Vector" d="M0,23.019C0,7.665,2.868,5.127,11.5,0"
+                                            fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" />
+                                    </g>
+                                    <g id="Group" transform="translate(34.593 8.325)">
+                                        <path id="Vector-3" data-name="Vector"
+                                            d="M0,0H14.72a6.391,6.391,0,0,1,6.548,6.548V14.72a6.391,6.391,0,0,1-6.548,6.548H6.548A6.564,6.564,0,0,1,0,14.72Z"
+                                            transform="translate(0 23.019)" fill="none" stroke="#424242"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                                        <path id="Vector-4" data-name="Vector" d="M0,23.019C0,7.665,2.868,5.127,11.5,0"
+                                            fill="none" stroke="#424242" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" />
+                                    </g>
+                                    <g id="Vector-5" data-name="Vector" transform="translate(60.911 60.911) rotate(180)"
+                                        fill="none" opacity="0">
+                                        <path d="M0,0H60.911V60.911H0Z" stroke="none" />
+                                        <path
+                                            d="M 0.9999961853027344 0.9999961853027344 L 0.9999961853027344 59.91147613525391 L 59.91147613525391 59.91147613525391 L 59.91147613525391 0.9999961853027344 L 0.9999961853027344 0.9999961853027344 M -3.814697265625e-06 -3.814697265625e-06 L 60.91147994995117 -3.814697265625e-06 L 60.91147994995117 60.91147994995117 L -3.814697265625e-06 60.91147994995117 L -3.814697265625e-06 -3.814697265625e-06 Z"
+                                            stroke="none" fill="#707070" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="brown_line">
+
+            <div id="id2" class="practical_info_section column_center">
+                <h2>practical info</h2>
+                <div class="textbox_background info_row1_box row_center">
+                    <div class="column_center">
+                        <h5>Opening hours:</h5>
+                        <p>Monday - Thursday <br> 10:00 - 22:00</p>
+
+                        <p>Friday - Saturday <br> 10:00 - 24:00</p>
+
+                    </div>
+
+                    <div class="column_center">
+                        <h5>Address:</h5>
+                        <p>Mejlgade 53, 1. sal, <br> 8000 Aarhus</p>
+
+                        <h5>How to get there?</h5>
+                        <a href="https://goo.gl/maps/roVRxpXPpA1tALh89">
+                            <p>Google Maps</p>
+                        </a>
+                    </div>
+
+                    <div class="column_center">
+                        <h5>Contact:</h5>
+                        <p>+45 25 12 12 24 <br> jla@ms.dk</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row_center">
+                    <div class="column_center">
+                        <h3>Menu:</h3>
+                        <div class="info_row2_box column_center textbox_background">
+                            <h5>Coffee & tea</h5>
+                            <p>Cappucino - 30 kr
+                                <br> Hot chocolate - 35 kr
+                            </p>
+                            <hr>
+                            <h5>Drinks:</h5>
+                            <p>Ice Latte - 40 kr
+                                <br> Kombucha - 45 kr
+                            </p>
+                            <hr>
+                            <h5>Food:</h5>
+                            <p>Panini - 50 kr
+                                <br> Nachos - 5 0 kr
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column_center">
+                        <h3>Board Games:</h3>
+                        <div class="info_row2_box column_center textbox_background">
+                            <p>Flamme Rouge</p>
+                            <p>Terraforming Mars</p>
+                            <p>King Tokyo</p>
+                            <p>Magic Maze</p>
+                            <p>Splendor</p>
+                            <p>Dixit</p>
+                            <p>Ticket to Train</p>
+                        </div>
+                    </div>
+                    <div class="column_center">
+                        <h3>Events:</h3>
+                        <div class="info_row2_box column_center textbox_background">
+                            <p>Board game group
+                                <br> meetings on
+                                <br> Tuesdays & Saturdays
+                                <br> 19:00
+                            </p>
+                            <a href="">
+                                <p>Check it out</p>
+                            </a>
+                            <hr>
+                            <h5>22.12 - 18:00</h5>
+                            <p>Workcrafting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="brown_line">
+
+            <div id="id3" class="column_center gallery_section">
+                <h2>gallery</h2>
+
+                <div class="gallery_background">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://i.ibb.co/XCyJn4P/6.jpg" style="width:100%">
+
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://i.ibb.co/6n28Qv6/9.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://i.ibb.co/0nKDdxV/1.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <!-- Full-width images with number and caption text -->
+
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                </div>
+                <!-- The dots/circles -->
+
+            </div>
+
+
+
+        </main>
+
+    </body>
+    <script src="javascript.js"></script>
+
+</html>
